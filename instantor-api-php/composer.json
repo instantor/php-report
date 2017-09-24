@@ -1,0 +1,15 @@
+{
+    "name": "instantor/report",
+    "description": "Secure PHP Encryption Library",
+    "type": "library",
+    "require": {
+        "defuse/php-encryption": "^2.1"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Instantor",
+            "email": "tech@instantor.com"
+        }
+    ]
+}
