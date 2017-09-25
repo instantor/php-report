@@ -22,8 +22,8 @@
   		}
   	}
 
-  	$source = "lukatest8.dk";
-  	$api_key = "45I4%P9ZRwbL3CanxD;.ziVj";
+  	$source = ""; // use product name
+  	$api_key = ""; // use your api_key
 
   	echo (new Test($source, $api_key))->runTest();
 
