@@ -1,3 +1,6 @@
+## Instantor report decryption API
+Defuse encryption library is used for PHP 7 versions
+
 ## How to use
 
 - install composer if not yet installed
