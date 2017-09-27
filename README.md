@@ -13,28 +13,31 @@ Defuse encryption library is used for PHP 7 versions
 		- OSX
 			- curl -sS https://getcomposer.org/installer | sudo php -- --install-dir=/usr/local/bin --filename=composer
 
-## Installing
-cmd: composer install
-
-## Running the tests
+## There is two way using this library:
+### 1. Example of using library as single project
+- download/clone repository
+- run composer install
 - use InstantorDecryptExample.php as a example to receive and decrypt report
 - change source and api_key variables inside InstantorDecryptExample.php according to your setup as a client
+- set your endpoint URL on web server to InstantorDecryptExample.php file
 
-## Example of using this library inside your existing project with composer
-- open composer.json
+### 2. Example of using library inside your existing project
+- open your existing composer.json
 - add this line:
 	"repositories": [
         {
             "type": "vcs",
             "url": "https://github.com/instantor/php-report.git"
         }
-    ]
+    ],
+    "require": {
+        "instantor/report": "dev-master"
+    }
+
 - run composer install
 - make php file and use this snippet:
-
 ```php
-require_once __DIR__ . '/src/Instantor/Report/Decrypt.php';
-require_once __DIR__ . '/vendor/autoload.php';
+require_once 'vendor/autoload.php';
 
 use Instantor\Report\Decrypt;
 

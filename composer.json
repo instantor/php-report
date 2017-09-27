@@ -5,6 +5,11 @@
     "require": {
         "defuse/php-encryption": "^2.1"
     },
+    "autoload": {
+        "psr-4": {
+            "Instantor\\Report\\": "src/Instantor/Report"
+        }
+    },
     "license": "MIT",
     "authors": [
         {
