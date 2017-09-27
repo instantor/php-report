@@ -1,7 +1,7 @@
 <?php
 
-    require_once __DIR__ . '/instantor-api-php/src/Instantor/Report/Decrypt.php';
-  	require_once __DIR__ . '/instantor-api-php/vendor/autoload.php';
+    require_once __DIR__ . '/src/Instantor/Report/Decrypt.php';
+  	require_once __DIR__ . '/vendor/autoload.php';
 
   	use Instantor\Report\Decrypt;
 
