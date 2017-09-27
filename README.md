@@ -10,7 +10,7 @@ Defuse encryption library is used for PHP 7 versions
 			- curl -sS https://getcomposer.org/installer | sudo php -- --install-dir=/usr/local/bin --filename=composer
 		- Windows
 			- Download the installer file by accessing the direct download link: https://getcomposer.org/Composer-Setup.exe, or visiting the official download page: https://getcomposer.org/download/
-		-OSX
+		- OSX
 			- curl -sS https://getcomposer.org/installer | sudo php -- --install-dir=/usr/local/bin --filename=composer
 
 ## Installing
@@ -22,7 +22,7 @@ cmd: composer install
 
 ## Example of using this library inside your existing project with composer
 - open composer.json
-- add this lines:
+- add this line:
 	"repositories": [
         {
             "type": "vcs",
@@ -30,6 +30,7 @@ cmd: composer install
         }
     ]
 - run composer install
+- make php file and use this snippet:
 
 ```php
 require_once __DIR__ . '/src/Instantor/Report/Decrypt.php';
